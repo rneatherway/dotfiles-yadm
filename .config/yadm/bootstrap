@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mkdir -p ~/opt/bin
+
+cd /tmp
+curl -Ls \
+     -o gh.tar.gz \
+     https://github.com/cli/cli/releases/download/v2.11.3/gh_2.11.3_linux_amd64.tar.gz
+
+tar -zxf gh.tar.gz
+mv gh_2.11.3_linux_amd64/bin/gh ~/opt/bin
+
